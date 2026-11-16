@@ -223,10 +223,10 @@ namespace Kjs
             GUI.Label(new Rect(0, 0, 360, chatHeight), chatLines, chatStyle);
             GUI.EndScrollView();
             GUI.enabled = open && !string.IsNullOrEmpty(localId);
-            GUI.SetNextControlName("ChatInput");
-            chat = GUI.TextField(new Rect(34, height - 57, 302, 27), chat, 140);
             bool submit = Event.current.type == EventType.KeyDown && Event.current.keyCode == KeyCode.Return
                           && GUI.GetNameOfFocusedControl() == "ChatInput";
+            GUI.SetNextControlName("ChatInput");
+            chat = GUI.TextField(new Rect(34, height - 57, 302, 27), chat, 140);
             if (GUI.Button(new Rect(344, height - 57, 76, 27), "Send") || submit)
             {
                 SendChat();
