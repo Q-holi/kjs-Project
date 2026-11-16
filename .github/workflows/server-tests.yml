@@ -1,0 +1,27 @@
+name: Server and transport tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  multiplayer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: Server/requirements.txt
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: python -m pip install -r Server/requirements.txt
+      - run: python Tools/validate_project.py
+      - run: python -m unittest discover -s Server/tests -v
+      - run: python Tools/load_test.py --clients 64 --seconds 5
+      - run: dotnet build Tools/TransportProfile/TransportProfile.csproj --configuration Release
+      - run: python Tools/run_transport_smoke.py

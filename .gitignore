@@ -107,3 +107,18 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# kjs Python server, verification tools and local credentials
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+Tools/**/bin/
+Tools/**/obj/
+!Tools/TransportProfile/TransportProfile.csproj
+!Tools/TransportSmoke/TransportSmoke.csproj
+TestResults/
+.DS_Store
+.vscode/

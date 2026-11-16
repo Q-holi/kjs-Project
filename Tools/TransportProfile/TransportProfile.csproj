@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Kjs/Runtime/WorldClient.cs" Link="WorldClient.cs" />
+    <Compile Include="../../Assets/Kjs/Runtime/Protocol.cs" Link="Protocol.cs" />
+  </ItemGroup>
+</Project>

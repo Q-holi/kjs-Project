@@ -1,0 +1,18 @@
+test_diagonal_speed_and_teleport_fields (test_server.MovementTests.test_diagonal_speed_and_teleport_fields) ... ok
+test_missing_inputs_stop_player (test_server.MovementTests.test_missing_inputs_stop_player) ... ok
+test_nonfinite_and_boolean_input_rejected (test_server.MovementTests.test_nonfinite_and_boolean_input_rejected) ... ok
+test_world_boundary_and_stale_sequence (test_server.MovementTests.test_world_boundary_and_stale_sequence) ... ok
+test_32_clients_see_each_other_and_unicode_chat (test_server.ProtocolTests.test_32_clients_see_each_other_and_unicode_chat) ... ok
+test_binary_and_oversized_packets (test_server.ProtocolTests.test_binary_and_oversized_packets) ... ok
+test_capacity_rejects_extra_client (test_server.ProtocolTests.test_capacity_rejects_extra_client) ... ok
+test_chat_rate_limit_and_length (test_server.ProtocolTests.test_chat_rate_limit_and_length) ... ok
+test_disconnect_cleanup_and_new_identity (test_server.ProtocolTests.test_disconnect_cleanup_and_new_identity) ... ok
+test_invalid_packet_does_not_break_other_clients (test_server.ProtocolTests.test_invalid_packet_does_not_break_other_clients) ... ok
+test_movement_observed_by_second_client (test_server.ProtocolTests.test_movement_observed_by_second_client) ... ok
+test_packet_flood_disconnects_sender (test_server.ProtocolTests.test_packet_flood_disconnects_sender) ... ok
+test_wrong_protocol_version (test_server.ProtocolTests.test_wrong_protocol_version) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.972s
+
+OK

@@ -1,0 +1,4 @@
+Compiler: Roslyn from .NET SDK 8.0.428
+Target: .NET Standard 2.1
+Sources: WorldClient.cs and Protocol.cs
+Exit code: 0

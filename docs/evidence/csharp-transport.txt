@@ -1,0 +1,1 @@
+{"passed":true,"clients":2,"checks":["welcome","unique_ids","shared_snapshot","remote_movement","unicode_chat","leave"],"runtime":"8.0.34","note":"Same WorldClient.cs; .NET runtime, not Unity Editor."}

@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-11-16",
+  "timezone": "Asia/Seoul",
+  "source": "https://services.api.unity.com/unity/editor/release/v1/releases?limit=10",
+  "selection": "Latest final release in returned results; ALPHA/BETA excluded",
+  "version": "6000.6.9f1",
+  "releaseDate": "2026-11-12T08:20:35.078Z",
+  "stream": "SUPPORTED",
+  "shortRevision": "8c45277fb9c5",
+  "releaseNotes": {
+    "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/6000_6_9f1_93f52a6c1c/6000_6_9f1_93f52a6c1c.md",
+    "type": "MD"
+  },
+  "unity_editor_execution_verified": false
+}

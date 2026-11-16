@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "clients": 64,
+  "duration_seconds": 5.106,
+  "server_tick_rate": 20,
+  "input_rounds": 48,
+  "min_snapshots_per_client": 100,
+  "max_snapshots_per_client": 100,
+  "full_roster_seen_by_all": true,
+  "unicode_chat_seen_by_all": true,
+  "snapshot_interval_median_ms": 50.883,
+  "snapshot_interval_p95_ms": 60.371,
+  "scope": "Python WebSocket bots, loopback; not Unity rendering or WAN/MMORPG capacity.",
+  "players_after_disconnect": 0
+}
