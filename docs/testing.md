@@ -93,3 +93,25 @@ export KJS_INTEGRATION_URL=ws://127.0.0.1:7777/world
 ## 지속 검증
 
 저장소에는 서버·정적 검사·C# 통신 시험을 실행하는 GitHub Actions 구성이 포함됩니다. 실제 실행 여부와 결과는 GitHub Actions에서 확인해야 하며, 워크플로 파일의 존재만으로 CI가 통과한 것으로 표시하지 않습니다. Unity 자동 빌드와 PlayMode CI는 Unity Editor와 적절한 활성화 환경을 구성한 뒤 추가할 수 있습니다.
+
+## 테스트 결과 스크린샷
+
+아래 이미지는 저장된 실행 로그와 GitHub API 결과를 표시하는 읽기 전용 뷰어를 브라우저로 캡처한 것입니다. 원본 결과를 변경하지 않았습니다. GitHub 웹 UI 또는 Unity 게임 화면의 캡처가 아니며, Unity 임포트·화면·빌드·실제 2인 플레이는 여전히 미검증입니다.
+
+검증 대상 코드 커밋: `372d4c0162ca1d5a1acf0f6542faf5673b2b5419`. [원본 GitHub Actions 실행](https://github.com/Q-holi/kjs-Project/actions/runs/43873807536)과 `docs/evidence/`의 원문 로그를 함께 확인할 수 있습니다.
+
+### GitHub 자동 검사 결과
+
+![GitHub API의 실제 자동 검사 성공 결과](evidence/screenshots/01-ci-results.png)
+
+### 서버 테스트 13개
+
+![서버 테스트 13개 통과 원문 로그](evidence/screenshots/02-server-tests.png)
+
+### 64개 클라이언트 동시 접속
+
+![64개 Python WebSocket 봇의 loopback 시험 원문 결과](evidence/screenshots/03-64-clients.png)
+
+### C# 통신 코드
+
+![실제 C# 통신 코드의 컴파일과 2개 클라이언트 실행 로그](evidence/screenshots/04-csharp-transport.png)
